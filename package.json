@@ -1,0 +1,38 @@
+{
+  "name": "vscodesurfer",
+  "displayName": "VSCodeSurfer",
+  "description": "Play a local video file in a VS Code panel beside your code.",
+  "version": "0.0.1",
+  "publisher": "ConflictStudios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ConflictStudios/vscodesurfer"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscodesurfer.start",
+        "title": "Open Video Panel",
+        "category": "VSCodeSurfer"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
