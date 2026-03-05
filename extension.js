@@ -6,6 +6,12 @@ const fs = require('fs');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+    // Register empty tree data provider so the welcome view is shown
+    vscode.window.registerTreeDataProvider('vscodesurfer.sidebar', {
+        getTreeItem: (el) => el,
+        getChildren: () => []
+    });
+
     const disposable = vscode.commands.registerCommand('vscodesurfer.start', function () {
         // Look for any video file in the media/ folder
         const mediaDir = path.join(context.extensionPath, 'media');

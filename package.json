@@ -25,6 +25,29 @@
         "title": "Open Video Panel",
         "category": "VSCodeSurfer"
       }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "vscodesurfer",
+          "title": "VSCodeSurfer",
+          "icon": "media/activitybar-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "vscodesurfer": [
+        {
+          "id": "vscodesurfer.sidebar",
+          "name": "Video Panel"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "vscodesurfer.sidebar",
+        "contents": "Open a video panel beside your code.\n\n[$(play) Open Video Panel](command:vscodesurfer.start)"
+      }
     ]
   },
   "scripts": {
