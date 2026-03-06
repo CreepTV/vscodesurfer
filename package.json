@@ -3,7 +3,7 @@
   "displayName": "VSCodeSurfer",
   "icon": "vscodesurfer-extension-logo.png",
   "description": "Play a local video file in a VS Code panel beside your code.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "ConflictStudios",
   "license": "MIT",
   "repository": {
@@ -31,7 +31,7 @@
         {
           "id": "vscodesurfer",
           "title": "VSCodeSurfer",
-          "icon": "media/activitybar-icon.svg"
+          "icon": "media/SubwayJake.png"
         }
       ]
     },

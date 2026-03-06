@@ -41,6 +41,8 @@ function activate(context) {
             }
         );
 
+        panel.iconPath = vscode.Uri.file(path.join(context.extensionPath, 'media', 'SubwayJake.png'));
+
         const videoUri = panel.webview.asWebviewUri(
             vscode.Uri.file(path.join(mediaDir, videoFile))
         );
